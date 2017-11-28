@@ -11,10 +11,16 @@ You will use this code as a template for your Visualization 3 assignment. The fi
 Note that each code chunk is set off with special tags.
 
 ```{r, warning=FALSE, message=FALSE}  
-library(tidyverse)
+library(ggplot2)
+library(dplyr)
 library(ggvis)
 library(WDI)
 library(plotly)
+library(maps)
+library(ggmap)
+
+world <- map_data("world") # set up world map
+
 ```
 
 # Call package `WDI` to retrieve most updated figures available.
